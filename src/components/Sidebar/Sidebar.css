@@ -1,0 +1,102 @@
+/* Sidebar style */
+.sidebar {
+  width: 12rem;
+  background-color: #f3f4f6; /* Default background color */
+  padding: 1rem;
+  position: fixed;
+  top: 4rem; /* Adjusted to match header height */
+  bottom: 3.5rem; /* Leave space for footer */
+  left: 0;
+  overflow-y: auto;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Mood-based sidebar background colors */
+body.happy-theme .sidebar {
+  background-color: #fefce8; /* Happy yellow */
+}
+
+body.sad-theme .sidebar {
+  background-color: #e0f2fe; /* Blue */
+}
+
+body.stressed-theme .sidebar {
+  background-color: #fef2f2; /* Light rose */
+}
+
+body.lonely-theme .sidebar {
+  background-color: #f3f4f6; /* Gray */
+}
+
+body.angry-theme .sidebar {
+  background-color: #fee2e2; /* Red */
+}
+
+body.excited-theme .sidebar {
+  background-color: #ecfeff; /* Cyan */
+}
+
+/* Sidebar links style */
+.sidebar a {
+  color: #1f2937; /* Tailwind's gray-800 */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Mood-based sidebar link colors */
+body.happy-theme .sidebar a {
+  color: #1d4ed8; /* Blue for happy */
+}
+
+body.sad-theme .sidebar a {
+  color: #2563eb; /* Blue for sad */
+}
+
+body.stressed-theme .sidebar a {
+  color: #e11d48; /* Red for stressed */
+}
+
+body.lonely-theme .sidebar a {
+  color: #4b5563; /* Gray for lonely */
+}
+
+body.angry-theme .sidebar a {
+  color: #b91c1c; /* Dark red for angry */
+}
+
+body.excited-theme .sidebar a {
+  color: #059669; /* Green for excited */
+}
+
+/* Hover effect for sidebar links */
+.sidebar a:hover {
+  color: #2563eb; /* Tailwind's blue-600 */
+}
+
+/* Mood-based hover effect on sidebar links */
+body.happy-theme .sidebar a:hover {
+  color: #3b82f6; /* Lighter blue for happy */
+}
+
+body.sad-theme .sidebar a:hover {
+  color: #1d4ed8; /* Lighter blue for sad */
+}
+
+body.stressed-theme .sidebar a:hover {
+  color: #f43f5e; /* Bright red for stressed */
+}
+
+body.lonely-theme .sidebar a:hover {
+  color: #9ca3af; /* Lighter gray for lonely */
+}
+
+body.angry-theme .sidebar a:hover {
+  color: #991b1b; /* Dark red for angry */
+}
+
+body.excited-theme .sidebar a:hover {
+  color: #10b981; /* Lighter green for excited */
+}

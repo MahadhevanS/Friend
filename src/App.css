@@ -1,0 +1,101 @@
+/* 🎭 Mood-Based Themes */
+
+body.happy-theme {
+  background-color: #fefce8; /* yellow-50 */
+  color: #78350f; /* amber-900 */
+}
+
+body.sad-theme {
+  background-color: #e0f2fe; /* blue-100 */
+  color: #1e40af; /* blue-800 */
+}
+
+body.stressed-theme {
+  background-color: #fef2f2; /* rose-50 */
+  color: #7f1d1d; /* red-900 */
+}
+
+body.lonely-theme {
+  background-color: #f3f4f6; /* gray-100 */
+  color: #374151; /* gray-700 */
+}
+
+body.angry-theme {
+  background-color: #fee2e2; /* red-100 */
+  color: #991b1b; /* red-800 */
+}
+
+body.excited-theme {
+  background-color: #ecfeff; /* cyan-50 */
+  color: #0e7490; /* cyan-700 */
+}
+
+/* Smooth transition for theme change */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* App Styling */
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* Chatbot Container Styling for Mood-Based Effects */
+body.happy-theme .chatbot-container,
+body.sad-theme .chatbot-container,
+body.stressed-theme .chatbot-container,
+body.lonely-theme .chatbot-container,
+body.angry-theme .chatbot-container,
+body.excited-theme .chatbot-container {
+  /* Apply mood-based changes to the chatbot container */
+  background-color: inherit;
+  color: inherit;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Adjust other components as necessary */
+body.happy-theme .App-header,
+body.sad-theme .App-header,
+body.stressed-theme .App-header,
+body.lonely-theme .App-header,
+body.angry-theme .App-header,
+body.excited-theme .App-header {
+  background-color: inherit;
+  color: inherit;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

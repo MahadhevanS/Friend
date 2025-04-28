@@ -1,0 +1,226 @@
+/* 🎭 Mood-Based Themes for Memories Page */
+
+/* General Theme Changes */
+body.happy-theme .memories-container {
+  background-color: #fefce8; /* yellow-50 */
+  color: #78350f; /* amber-900 */
+}
+
+body.sad-theme .memories-container {
+  background-color: #e0f2fe; /* blue-100 */
+  color: #1e40af; /* blue-800 */
+}
+
+body.stressed-theme .memories-container {
+  background-color: #fef2f2; /* rose-50 */
+  color: #7f1d1d; /* red-900 */
+}
+
+body.lonely-theme .memories-container {
+  background-color: #f3f4f6; /* gray-100 */
+  color: #374151; /* gray-700 */
+}
+
+body.angry-theme .memories-container {
+  background-color: #fee2e2; /* red-100 */
+  color: #991b1b; /* red-800 */
+}
+
+body.excited-theme .memories-container {
+  background-color: #ecfeff; /* cyan-50 */
+  color: #0e7490; /* cyan-700 */
+}
+
+/* Smooth transition for theme change */
+body {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Styling for Memories Container */
+.memories-container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f4f4f9;
+  min-height: 100vh;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Upload Section */
+body.happy-theme .upload-section button,
+body.sad-theme .upload-section button,
+body.stressed-theme .upload-section button,
+body.lonely-theme .upload-section button,
+body.angry-theme .upload-section button,
+body.excited-theme .upload-section button {
+  background-color: inherit; /* Match button color to theme */
+}
+
+.upload-section {
+  margin-bottom: 2rem;
+}
+
+.upload-section input {
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.upload-section button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.upload-section button:hover {
+  background-color: #45a049;
+}
+
+/* Complete Button */
+.complete-btn {
+  margin-top: 10px;
+  background-color: #007BFF;
+}
+
+.complete-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Moments Section */
+.moments-section {
+  margin-bottom: 2rem;
+}
+
+.moment-group {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.moment-group h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Images and Thumbnails */
+.moment-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.moment-thumbnail {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.moment-thumbnail:hover {
+  transform: scale(1.1);
+}
+
+/* Grid Layout for Image Items */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Image Item Styles */
+.image-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.image-item .image-date {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+/* Modal */
+.image-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow: auto;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
+/* Delete Button */
+.delete-button {
+  margin-top: 5px;
+  background-color: #ff6961;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.delete-button:hover {
+  background-color: #ff5c5c;
+}

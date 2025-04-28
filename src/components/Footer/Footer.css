@@ -1,0 +1,75 @@
+/* Footer Container Style */
+.footer-container {
+  background-color: #1E3A8A; /* Default background color */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3.5rem;
+  width: 100%;
+  z-index: 20;
+}
+
+/* Mood-based footer background colors */
+body.happy-theme .footer-container {
+  background-color: #fefce8; /* Happy yellow */
+}
+
+body.sad-theme .footer-container {
+  background-color: #e0f2fe; /* Light blue */
+}
+
+body.stressed-theme .footer-container {
+  background-color: #fef2f2; /* Light rose */
+}
+
+body.lonely-theme .footer-container {
+  background-color: #f3f4f6; /* Gray */
+}
+
+body.angry-theme .footer-container {
+  background-color: #fee2e2; /* Light red */
+}
+
+body.excited-theme .footer-container {
+  background-color: #ecfeff; /* Light cyan */
+}
+
+/* Footer Links Style */
+
+
+/* Mood-based footer links text colors */
+body.happy-theme .footer-container {
+  color: #1d4ed8; /* Blue for happy */
+}
+
+body.sad-theme .footer-container {
+  color: #2563eb; /* Blue for sad */
+}
+
+body.stressed-theme .footer-container {
+  color: #e11d48; /* Red for stressed */
+}
+
+body.lonely-theme .footer-container  {
+  color: #4b5563; /* Gray for lonely */
+}
+
+body.angry-theme .footer-container {
+  color: #991b1b; /* Dark red for angry */
+}
+
+body.excited-theme .footer-container {
+  color: #059669; /* Green for excited */
+}
+
+/* Hover effect for links */
+.footer-container a:hover {
+  color: #2563eb; /* Tailwind blue-600 */
+}

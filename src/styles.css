@@ -1,0 +1,38 @@
+/* styles.css */
+/* At top of your styles.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container with flexbox */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Content area - takes the remaining space */
+.content {
+  margin-left: 12rem;
+  margin-top: 4rem;
+  margin-bottom: 3.5rem; /* Account for footer */
+  padding: 1rem;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+    top: 0;
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+}
